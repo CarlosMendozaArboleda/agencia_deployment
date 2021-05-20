@@ -1,0 +1,173 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Prueba la nueva tecnología PowerShell multiplataforma https://aka.ms/pscore6
+
+PS C:\Users\CARLOS> cd C:\Users\CARLOS\Desktop\Curso+JS+Moderno\AgenciaViajesNode
+PS C:\Users\CARLOS\Desktop\Curso+JS+Moderno\AgenciaViajesNode> npm run dev
+
+> agenciaviajesnode@1.0.0 dev C:\Users\CARLOS\Desktop\Curso+JS+Moderno\AgenciaViajesNode
+> nodemon index.js
+
+[nodemon] 2.0.7
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node index.js`
+Listening on 3000
+ConnectionRefusedError [SequelizeConnectionRefusedError]: connect ECONNREFUSED 127.0.0.1:3306
+    at ConnectionManager.connect (C:\Users\CARLOS\Desktop\Curso+JS+Moderno\AgenciaViajesNode\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async ConnectionManager._connect (C:\Users\CARLOS\Desktop\Curso+JS+Moderno\AgenciaViajesNode\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:318:24)
+    at async C:\Users\CARLOS\Desktop\Curso+JS+Moderno\AgenciaViajesNode\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (C:\Users\CARLOS\Desktop\Curso+JS+Moderno\AgenciaViajesNode\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:280:7)
+    at async C:\Users\CARLOS\Desktop\Curso+JS+Moderno\AgenciaViajesNode\node_modules\sequelize\lib\sequelize.js:613:26
+    at async Sequelize.authenticate (C:\Users\CARLOS\Desktop\Curso+JS+Moderno\AgenciaViajesNode\node_modules\sequelize\lib\sequelize.js:867:5) {
+  parent: Error: connect ECONNREFUSED 127.0.0.1:3306
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16) {
+    errno: -4078,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3306,
+    fatal: true
+  },
+  original: Error: connect ECONNREFUSED 127.0.0.1:3306
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16) {
+    errno: -4078,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3306,
+    fatal: true
+  }
+}
+[Object: null prototype] { variable: 'Una variable' }
+Executing (default): SELECT `id`, `titulo`, `precio`, `fecha_ida`, `fecha_vuelta`, `imagen`, `descripcion`, `disponibles`, `slug` FROM `viajes` AS `viajes`;
+Executing (default): SELECT `id`, `titulo`, `precio`, `fecha_ida`, `fecha_vuelta`, `imagen`, `descripcion`, `disponibles`, `slug` FROM `viajes` AS `viajes` WHERE `viajes`.`slug` = 'viaje-canada';
+[
+  viajes {
+    dataValues: {
+      id: 2,
+      titulo: 'Canada',
+      precio: '60000',
+      fecha_ida: '2021-07-19',
+      fecha_vuelta: '2021-07-19',
+      imagen: 'canada',
+      descripcion: 'Praesent tincidunt ante at justo semper volutpat. Sed risus neque, scelerisque id dictum in, placerat non erat. Sed eget tellus eu mauris faucibus pharetra. Praesent vulputate diam ac diam dignissim, eu semper turpis gravida. Vestibulum tempor purus orci, vitae ullamcorper erat congue quis. Nullam dapibus dui a velit lacinia, eu cursus massa cursus. Morbi lobortis fermentum urna, quis tincidunt justo varius vitae. In justo nisl, auctor vel eros sed, tempus efficitur lacus. Maecenas volutpat pharetra dolor, nec rutrum ipsum dapibus id.\r\n' +
+        '\r\n' +
+        'Mauris ultricies augue lectus, efficitur tincidunt enim euismod non. Praesent nisl elit, eleifend et eleifend eu, venenatis et felis. Donec eleifend mi in congue semper. Quisque hendrerit purus eget pharetra laoreet. Donec nisl nisi, auctor at vehicula et, fermentum sed urna. In nec porta felis, eu ullamcorper lacus. Curabitur scelerisque commodo laoreet. Donec finibus vel nibh quis ultrices. Integer varius tellus sed leo tempor, vitae ullamcorper leo placerat.',
+      disponibles: 25,
+      slug: 'viaje-canada'
+    },
+    _previousDataValues: {
+      id: 2,
+      titulo: 'Canada',
+      precio: '60000',
+      fecha_ida: '2021-07-19',
+      fecha_vuelta: '2021-07-19',
+      imagen: 'canada',
+      descripcion: 'Praesent tincidunt ante at justo semper volutpat. Sed risus neque, scelerisque id dictum in, placerat non erat. Sed eget tellus eu mauris faucibus pharetra. Praesent vulputate diam ac diam dignissim, eu semper turpis gravida. Vestibulum tempor purus orci, vitae ullamcorper erat congue quis. Nullam dapibus dui a velit lacinia, eu cursus massa cursus. Morbi lobortis fermentum urna, quis tincidunt justo varius vitae. In justo nisl, auctor vel eros sed, tempus efficitur lacus. Maecenas volutpat pharetra dolor, nec rutrum ipsum dapibus id.\r\n' +
+        '\r\n' +
+        'Mauris ultricies augue lectus, efficitur tincidunt enim euismod non. Praesent nisl elit, eleifend et eleifend eu, venenatis et felis. Donec eleifend mi in congue semper. Quisque hendrerit purus eget pharetra laoreet. Donec nisl nisi, auctor at vehicula et, fermentum sed urna. In nec porta felis, eu ullamcorper lacus. Curabitur scelerisque commodo laoreet. Donec finibus vel nibh quis ultrices. Integer varius tellus sed leo tempor, vitae ullamcorper leo placerat.',
+      disponibles: 25,
+      slug: 'viaje-canada'
+    },
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  }
+]
+Executing (default): SELECT `id`, `titulo`, `precio`, `fecha_ida`, `fecha_vuelta`, `imagen`, `descripcion`, `disponibles`, `slug` FROM `viajes` AS `viajes`;
+Executing (default): SELECT `id`, `titulo`, `precio`, `fecha_ida`, `fecha_vuelta`, `imagen`, `descripcion`, `disponibles`, `slug` FROM `viajes` AS `viajes` WHERE `viajes`.`slug` = 'viaje-canada';
+[
+  viajes {
+    dataValues: {
+      id: 2,
+      titulo: 'Canada',
+      precio: '60000',
+      fecha_ida: '2021-07-19',
+      fecha_vuelta: '2021-07-19',
+      imagen: 'canada',
+      descripcion: 'Praesent tincidunt ante at justo semper volutpat. Sed risus neque, scelerisque id dictum in, placerat non erat. Sed eget tellus eu mauris faucibus pharetra. Praesent vulputate diam ac diam dignissim, eu semper turpis gravida. Vestibulum tempor purus orci, vitae ullamcorper erat congue quis. Nullam dapibus dui a velit lacinia, eu cursus massa cursus. Morbi lobortis fermentum urna, quis tincidunt justo varius vitae. In justo nisl, auctor vel eros sed, tempus efficitur lacus. Maecenas volutpat pharetra dolor, nec rutrum ipsum dapibus id.\r\n' +
+        '\r\n' +
+        'Mauris ultricies augue lectus, efficitur tincidunt enim euismod non. Praesent nisl elit, eleifend et eleifend eu, venenatis et felis. Donec eleifend mi in congue semper. Quisque hendrerit purus eget pharetra laoreet. Donec nisl nisi, auctor at vehicula et, fermentum sed urna. In nec porta felis, eu ullamcorper lacus. Curabitur scelerisque commodo laoreet. Donec finibus vel nibh quis ultrices. Integer varius tellus sed leo tempor, vitae ullamcorper leo placerat.',
+      disponibles: 25,
+      slug: 'viaje-canada'
+    },
+    _previousDataValues: {
+      id: 2,
+      titulo: 'Canada',
+      precio: '60000',
+      fecha_ida: '2021-07-19',
+      fecha_vuelta: '2021-07-19',
+      imagen: 'canada',
+      descripcion: 'Praesent tincidunt ante at justo semper volutpat. Sed risus neque, scelerisque id dictum in, placerat non erat. Sed eget tellus eu mauris faucibus pharetra. Praesent vulputate diam ac diam dignissim, eu semper turpis gravida. Vestibulum tempor purus orci, vitae ullamcorper erat congue quis. Nullam dapibus dui a velit lacinia, eu cursus massa cursus. Morbi lobortis fermentum urna, quis tincidunt justo varius vitae. In justo nisl, auctor vel eros sed, tempus efficitur lacus. Maecenas volutpat pharetra dolor, nec rutrum ipsum dapibus id.\r\n' +
+        '\r\n' +
+        'Mauris ultricies augue lectus, efficitur tincidunt enim euismod non. Praesent nisl elit, eleifend et eleifend eu, venenatis et felis. Donec eleifend mi in congue semper. Quisque hendrerit purus eget pharetra laoreet. Donec nisl nisi, auctor at vehicula et, fermentum sed urna. In nec porta felis, eu ullamcorper lacus. Curabitur scelerisque commodo laoreet. Donec finibus vel nibh quis ultrices. Integer varius tellus sed leo tempor, vitae ullamcorper leo placerat.',
+      disponibles: 25,
+      slug: 'viaje-canada'
+    },
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  }
+]
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+Listening on 3000
+Executing (default): SELECT 1+1 AS result
+DB connection established
+Executing (default): SELECT `id`, `titulo`, `precio`, `fecha_ida`, `fecha_vuelta`, `imagen`, `descripcion`, `disponibles`, `slug` FROM `viajes` AS `viajes` WHERE `viajes`.`slug` = 'viaje-canada';
+Desde el try [
+  viajes {
+    dataValues: {
+      id: 2,
+      titulo: 'Canada',
+      precio: '60000',
+      fecha_ida: '2021-07-19',
+      fecha_vuelta: '2021-07-19',
+      imagen: 'canada',
+      descripcion: 'Praesent tincidunt ante at justo semper volutpat. Sed risus neque, scelerisque id dictum in, placerat non erat. Sed eget tellus eu mauris faucibus pharetra. Praesent vulputate diam ac diam dignissim, eu semper turpis gravida. Vestibulum tempor purus orci, vitae ullamcorper erat congue quis. Nullam dapibus dui a velit lacinia, eu cursus massa cursus. Morbi lobortis fermentum urna, quis tincidunt justo varius vitae. In justo nisl, auctor vel eros sed, tempus efficitur lacus. Maecenas volutpat pharetra dolor, nec rutrum ipsum dapibus id.\r\n' +
+        '\r\n' +
+        'Mauris ultricies augue lectus, efficitur tincidunt enim euismod non. Praesent nisl elit, eleifend et eleifend eu, venenatis et felis. Donec eleifend mi in congue semper. Quisque hendrerit purus eget pharetra laoreet. Donec nisl nisi, auctor at vehicula et, fermentum sed urna. In nec porta felis, eu ullamcorper lacus. Curabitur scelerisque commodo laoreet. Donec finibus vel nibh quis ultrices. Integer varius tellus sed leo tempor, vitae ullamcorper leo placerat.',
+      disponibles: 25,
+      slug: 'viaje-canada'
+    },
+    _previousDataValues: {
+      id: 2,
+      titulo: 'Canada',
+      precio: '60000',
+      fecha_ida: '2021-07-19',
+      fecha_vuelta: '2021-07-19',
+      imagen: 'canada',
+      descripcion: 'Praesent tincidunt ante at justo semper volutpat. Sed risus neque, scelerisque id dictum in, placerat non erat. Sed eget tellus eu mauris faucibus pharetra. Praesent vulputate diam ac diam dignissim, eu semper turpis gravida. Vestibulum tempor purus orci, vitae ullamcorper erat congue quis. Nullam dapibus dui a velit lacinia, eu cursus massa cursus. Morbi lobortis fermentum urna, quis tincidunt justo varius vitae. In justo nisl, auctor vel eros sed, tempus efficitur lacus. Maecenas volutpat pharetra dolor, nec rutrum ipsum dapibus id.\r\n' +
+        '\r\n' +
+        'Mauris ultricies augue lectus, efficitur tincidunt enim euismod non. Praesent nisl elit, eleifend et eleifend eu, venenatis et felis. Donec eleifend mi in congue semper. Quisque hendrerit purus eget pharetra laoreet. Donec nisl nisi, auctor at vehicula et, fermentum sed urna. In nec porta felis, eu ullamcorper lacus. Curabitur scelerisque commodo laoreet. Donec finibus vel nibh quis ultrices. Integer varius tellus sed leo tempor, vitae ullamcorper leo placerat.',
+      disponibles: 25,
+      slug: 'viaje-canada'
+    },
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  }
+]

@@ -1,0 +1,12 @@
+{
+     "pugbeautify.fillTab": null,
+     "pugbeautify.omitDiv": true,
+     "emmet.includeLanguages": {
+          "html": "pug"
+     },
+     "emmet.preferences": {
+     
+     },
+     "emmet.showSuggestionsAsSnippets": true,
+     "html-css-class-completion.enableEmmetSupport": true
+}
